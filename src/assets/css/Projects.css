@@ -1,0 +1,6 @@
+.ProjectsContainer{
+    display: flex;
+    background-color: var(--bg-dm-alt);
+    height: 100vh;
+    width: 100vw;
+}
