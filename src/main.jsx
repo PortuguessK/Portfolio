@@ -10,8 +10,6 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <div className="Container">
-    <Nav />
     <MainInformation />
-    <Projects/>
   </div>
 );

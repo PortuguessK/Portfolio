@@ -1,258 +1,274 @@
-.MainInformation-Container{
-    border-bottom: 2px solid var(--primary-alt);
-}
 @media (min-width: 1000px) {
-    .MainInformation {
-        display: block;
-        gap: 70px;
-        align-items: center;
-        width: 100vw;
-        margin-top: 50px;
+  .MainInformation-Container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 100vw;
+    background: repeating-linear-gradient(
+      45deg,
+      #161a1d05,
+      #161a1d05 8px,
+      #0b090a 6px,
+      #0b090a 25px
+    );
+  }
+  .MainInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    gap: 70px;
+    border-bottom: 2px solid var(--primary-alt);
+  }
+  .Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+  }
+  .MyCard {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+  }
+  .MyCardTitleContainer {
+    display: flex;
+    flex-direction: column;
+    /*  */
+    height: fit-content;
+    padding-left: 10px;
+    /*  */
+    animation: BorderLAnimation 10s infinite;
+  }
+  @keyframes BorderLAnimation {
+    0% {
+      border-left: 4px solid var(--primary);
     }
-        .Cards{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 100px;
-        }
-        .MyCard{
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-            width: 400px;
-        }
-        .MyCardTitleContainer {
-            display: flex;
-            flex-direction: column;
-            /*  */
-            height: fit-content;
-            padding-left: 10px;
-            /*  */
-            animation: BorderLAnimation 10s infinite;
-        }
-        @keyframes BorderLAnimation {
-            0%{
-                border-left: 4px solid var(--primary);
-            }
-            50%{
-                border-left: 4px solid var(--primary-alt);
-            }
-            100%{
-                border-left: 4px solid var(--primary);
-            }
-        }
-            .MyName{
-                font-size: 2.5em;
-                font-weight: 600;
-                letter-spacing: 0.5px;
-            }
-            .MyCarreer{
-                color: var(--bg-lm-alt);
-                font-size: 1.78em;
-                font-weight: 500;
-                letter-spacing: 0.5px;
-            }
-        .SocialMediaContainer {
-            display: flex;
-            flex-direction: row;
-            gap: 10px;
-            padding-left: 6px;
-        }
-            .SocialMediaSvg {
-                height: 50px;
-            }
-            .SocialMediaSvg:hover .SocialMediaSvgPath{
-                fill: var(--primary-alt);
-            }
-            .SocialMediaSvgPath{
-                fill: var(--primary);
-                transition: all .3s;
-            }
-        .WAYCard{
-            display: flex;
-            flex-direction: column;
-            gap: 40px   ;
-            width: 400px;
-            animation: BorderRAnimation 10s infinite;
-        }
-        @keyframes BorderRAnimation {
-            0%{
-                border-right: 4px solid var(--primary);
-            }
-            50%{
-                border-right: 4px solid var(--primary-alt);
-            }
-            100%{
-                border-right: 4px solid var(--primary);
-            }
-        }
-            .WAYCardTitleContainer{
-                display: flex;
-                justify-content: start;
-                padding-right: 10px;
-                width: 100%;
-            }
-                .WAYCardTitle{
-                    font-size: 2.5em;
-                    font-weight: 600;
-                    letter-spacing: 0.6px;
-                }
-            .WAYCardParagraphContainer{
-                display: flex;
-                flex-direction: column;
-                justify-content: start;
-                gap: 30px;
-                padding-right: 10px;
-                width: 95%;
-            }
-                .WAYCardParagraph{
-                    color: var(--bg-lm-alt);
-                    font-size: 1.5em;
-                    font-weight: 500;
-                }
-    .ArrowContainer{
-        display: flex;
-        justify-content: center;
-        align-items: end;
-        height: 100px;
-        width: 100%;
-        margin-top: 100px;
+    50% {
+      border-left: 4px solid var(--primary-alt);
     }
-    .ArrowDown{
-        height: 100px;
-        width: 100px;
-        animation: ArrowDownAnimation 2s infinite;
+    100% {
+      border-left: 4px solid var(--primary);
     }
-    .ArrowDown path {
-        fill: var(--primary);
-        animation: ArrowDownAnimation 2s infinite;
+  }
+  .MyName {
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+  }
+  .MyCarreer {
+    color: var(--bg-lm-alt);
+    font-size: 1.78em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  .SocialMediaContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    padding-left: 6px;
+  }
+  .SocialMediaSvg {
+    height: 50px;
+  }
+  .SocialMediaSvg:hover .SocialMediaSvgPath {
+    fill: var(--primary-alt);
+  }
+  .SocialMediaSvgPath {
+    fill: var(--primary);
+    transition: all 0.3s;
+  }
+  .WAYCard {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 400px;
+    animation: BorderRAnimation 10s infinite;
+  }
+  @keyframes BorderRAnimation {
+    0% {
+      border-right: 4px solid var(--primary);
     }
-    @keyframes ArrowDownAnimation {
-        0%{
-            height: 100px;
-            fill: var(--primary-alt);
-        }
-        50%{
-            height: 70px;
-            fill: var(--primary);
-        }
-        100%{
-            height: 100px;
-            fill: var(--primary-alt);
-        }
+    50% {
+      border-right: 4px solid var(--primary-alt);
     }
+    100% {
+      border-right: 4px solid var(--primary);
+    }
+  }
+  .WAYCardTitleContainer {
+    display: flex;
+    justify-content: start;
+    padding-right: 10px;
+    width: 100%;
+  }
+  .WAYCardTitle {
+    font-size: 2.5em;
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
+  .WAYCardParagraphContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 30px;
+    padding-right: 10px;
+    width: 95%;
+  }
+  .WAYCardParagraph {
+    color: var(--bg-lm-alt);
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .ArrowContainer {
+    display: flex;
+    position: absolute;
+    bottom: 0px;
+    justify-content: center;
+    align-items: end;
+    height: 100px;
+    width: 100%;
+  }
+  .ArrowDown {
+    height: 100px;
+    width: 100px;
+    animation: ArrowDownAnimation 2s infinite;
+  }
+  .ArrowDown path {
+    fill: var(--primary);
+    animation: ArrowDownAnimation 2s infinite;
+  }
+  @keyframes ArrowDownAnimation {
+    0% {
+      height: 100px;
+      fill: var(--primary-alt);
+    }
+    50% {
+      height: 70px;
+      fill: var(--primary);
+    }
+    100% {
+      height: 100px;
+      fill: var(--primary-alt);
+    }
+  }
 }
 @media (min-width: 0px) and (max-width: 500px) {
-    .MainInformation{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 100vw;
-        height: 85vh;
+  .MainInformation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+    width: 100vw;
+  }
+  /* CARDS */
+  .Cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 10px;
+    gap: 30px;
+  }
+  .MyCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+  }
+  .MyCardTitleContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    border-right: 2px solid var(--primary-alt);
+    width: 180px;
+    height: 142px;
+  }
+  .MyName {
+    font-size: 1.8em;
+    font-weight: 500;
+  }
+  .MyCarreer {
+    font-size: 1.4em;
+    color: var(--bg-lm-alt);
+  }
+  .SocialMediaContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4px;
+    gap: 15px;
+    height: 142px;
+  }
+  .SocialMediaSvg {
+    height: 30px;
+  }
+  .SocialMediaSvg:active .SocialMediaSvgPath,
+  .SocialMediaSvg:hover .SocialMediaSvgPath {
+    fill: var(--primary-alt);
+  }
+  .SocialMediaSvgPath {
+    fill: var(--primary);
+    transition: all 0.3s;
+  }
+  .WAYCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .WAYCardTitleContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .WAYCardTitle {
+    font-size: 2.2em;
+  }
+  .WAYCardParagraphContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 80%;
+    text-align: center;
+  }
+  .ArrowContainer {
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    width: 100%;
+  }
+  .ArrowDown {
+    height: 80px;
+    fill: var(--primary);
+    animation: ArrowDownAnimationPhone 3s infinite;
+  }
+  @keyframes ArrowDownAnimationPhone {
+    0% {
+      height: 100px;
+      fill: var(--primary);
     }
-    /* CARDS */
-    .Cards{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        width: 100%;
-        padding-top: 10px;
-        gap: 30px;
+    50% {
+      height: 70px;
+      fill: var(--primary-alt);
     }
-    .MyCard{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        gap: 5px;
+    100% {
+      height: 100px;
+      fill: var(--primary);
     }
-    .MyCardTitleContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 2px;
-        border-right: 2px solid var(--primary-alt);
-        width: 180px;
-        height: 142px;
-    }
-        .MyName{
-            font-size: 1.8em;
-            font-weight: 500;
-        }
-        .MyCarreer{
-            font-size: 1.4em;
-            color: var(--bg-lm-alt);
-        }
-    .SocialMediaContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        margin-top: 4px;
-        gap: 15px;
-        height: 142px;
-    }
-    .SocialMediaSvg {
-        height: 30px;
-    }
-    .SocialMediaSvg:active .SocialMediaSvgPath, .SocialMediaSvg:hover .SocialMediaSvgPath{
-        fill: var(--primary-alt);
-    }
-    .SocialMediaSvgPath{
-        fill: var(--primary);
-        transition: all .3s;
-    }
-    .WAYCard{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    .WAYCardTitleContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .WAYCardTitle{
-        font-size: 2.2em;
-    }
-    .WAYCardParagraphContainer{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 20px;
-        width: 80%;
-        text-align: center;
-    }
-    .ArrowContainer{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80px;
-        width: 100%;
-        margin-top: 10px;
-    }
-    .ArrowDown{
-        height: 80px;
-        fill: var(--primary);
-        animation: ArrowDownAnimationPhone 3s infinite;
-    }
-    @keyframes ArrowDownAnimationPhone {
-        0%{
-            height: 100px;
-            fill: var(--primary);
-        }
-        50%{
-            height: 70px;
-            fill: var(--primary-alt );
-        }
-        100%{
-            height: 100px;
-            fill: var(--primary);
-        }
-    }
-    }
+  }
+}

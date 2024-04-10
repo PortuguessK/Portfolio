@@ -5,7 +5,7 @@
     --primary-alt: #660708;
     --primary-crystal: #66070951;
     /* DARK MODE */
-    --bg-dm: #0B090A;
+    --bg-dm: #0a0a0a;
     --bg-dm-alt: #161A1D;
     /* LIGHT MODE */
     --bg-lm: #FFFFFF;
@@ -16,7 +16,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Onest', sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     overflow-x: hidden;
@@ -30,12 +30,6 @@ body {
     color: var(--bg-lm);
 }
 #root{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.Container {
     display: flex;
     align-items: center;
     justify-content: center;
