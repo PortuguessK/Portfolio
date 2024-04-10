@@ -1,0 +1,42 @@
+nav{
+    position: absolute;
+    display: flex;
+    /*  */
+    top: 0;
+    height: 80px;
+    width: 100%;
+    /*  */
+}
+.ModeContainer:hover{
+    cursor: pointer;
+}
+.MoonSvg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    padding: 18px;
+}
+.MoonSvg path {
+    transition: fill .3s;
+    filter: drop-shadow(0px 0px 1px var(--bg-lm-alt));
+}
+.MoonSvg path:hover, .MoonSvg path:active {
+    cursor: pointer;
+    fill: var(--bg-lm-alt);
+}
+.SunSvg {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    height: 100%;
+    padding: 18px;
+}
+.SunSvg path {
+    transition: fill .3s;
+    filter: drop-shadow(0px 0px 1px var(--bg-dm-alt));
+}
+.SunSvg path:hover, .SunSvg path:active {
+    cursor: pointer;
+    fill: var(--bg-dm-alt);
+}

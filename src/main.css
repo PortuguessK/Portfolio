@@ -8,8 +8,8 @@
     --bg-dm: #0a0a0a;
     --bg-dm-alt: #161A1D;
     /* LIGHT MODE */
-    --bg-lm: #FFFFFF;
-    --bg-lm-alt: #AAAAAA;
+    --bg-lm: #F5F5F5;
+    --bg-lm-alt: #CCCCCC;
 }
 
 *{
@@ -26,7 +26,6 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--bg-dm);
     color: var(--bg-lm);
 }
 #root{
@@ -35,9 +34,32 @@ body {
     justify-content: center;
     flex-direction: column;
 }
+/* LightMode */
+.bglm{
+    background-color: var(--bg-lm);
+}
+.clm{
+    color: var(--bg-dm);
+}
+.clmalt{
+    color: var(--bg-dm-alt);
+}
+/* DarkMode */
+.bgdm{
+    background-color: var(--bg-dm);
+}
+.cdm{
+    color: var(--bg-lm);
+}
+.cdmalt{
+    color: var(--bg-lm-alt);
+}
 .primary-color {
     color: var(--primary);
 }
 .fw-500{
     font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
 }
